@@ -18,28 +18,62 @@ const example = {
 }
 
 // Write your intern objects here:
-
+const intern = [
+  {"id":1, "email":"mmelloy0@psu.edu", "name":"Mitzi","gender":"F",speak:function() {console.log("Hello, my name is "+ this.name)},multiply(x, y) {return x * y;}},
+  {"id":2, "email":"kdiben1@tinypic.com", "name":"Kennan","gender":"M",speak:function(){console.log("Hello, my name is "+ this.name)},multiply(x, y) {return x * y;}},
+  {"id":3, "email":"kmummery2@wikimedia.org", "name":"Keven","gender":"M",speak:function(){console.log("Hello, my name is "+ this.name)},multiply(x, y) {return x * y;}},
+  {"id":4, "email":"gmartinson3@illinois.edu", "name":"Gannie","gender":"M",speak:function(){console.log("Hello, my name is "+ this.name)},multiply(x, y) {return x * y;}},
+  {"id":5, "email":"adaine5@samsung.com", "name":"Antonietta","gender":"F",speak:function(){console.log("Hello, my name is "+ this.name)},multiply(x, y) {return x * y;}}
+]
 
 // ==== Challenge 2: Reading Object Data ==== 
 // Once your objects are created, log out the following requests from HR into the console:
 
 // Mitzi's name
-
+for (let i = 0; i < intern.length; i++) {
+    if (intern[i].name === "Mitzi") {
+      console.log(intern[i].name);
+    }
+  }
 // Kennan's ID
-
+for (let i = 0; i < intern.length; i++) {
+  if (intern[i].name === "Kennan") {
+    console.log(intern[i].id);
+  }
+}
 // Keven's email
-
+for (let i = 0; i < intern.length; i++) {
+  if (intern[i].name === "Keven") {
+    console.log(intern[i].email);
+  }
+}
 // Gannie's name
-
+for (let i = 0; i < intern.length; i++) {
+  if (intern[i].name === "Gannie") {
+    console.log(intern[i].name);
+  }
+}
 // Antonietta's Gender
-
+for (let i = 0; i < intern.length; i++) {
+  if (intern[i].name === "Antonietta") {
+    console.log(intern[i].gender);
+  }
+}
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 // console.log(kennan.speak());
-
+for (let i = 0; i < intern.length; i++) {
+  if (intern[i].name === "Kennan") {
+    console.log(intern[i].speak());
+  }
+}
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
-
+for (let i = 0; i < intern.length; i++) {
+  if (intern[i].name === "Antonietta") {
+    console.log(intern[i].multiply(3,4));
+  }
+}
 // === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
 
 // ==== Stretch Challenge: Nested Objects and the this keyword ==== 
